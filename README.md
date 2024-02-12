@@ -21,3 +21,5 @@ Django==3.1.6
 pytz==2024.1
 sqlparse==0.4.4
 typing_extensions==4.9.0
+
+template_site: https://themes.getbootstrap.com/preview/?theme_id=92520
