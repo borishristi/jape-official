@@ -1,10 +1,121 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>template site</title>
+    <link rel="stylesheet" href="{% static 'css/template.css' %}">
+    <script src="https://kit.fontawesome.com/bcfa7a8368.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+<!--START NAVBAR-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">JAPE OFFICIEL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact us</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success btn-light" type="submit">Search</button>
+                <!--                <span><i class="fa-solid fa-magnifying-glass fa-2xl mt-2"></i></span>-->
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!--END NAVBAR-->
+
+<!--START NEWS BAR-->
+
+<div class="container border mt-3">
+    <div class="row bg-light border border-danger">
+        <div class="col-md-2 col-12 border border-success position-relative" style="min-height: 40px">
+            <div class="position-absolute translate-middle start-50 top-50 bg-primary py-1 pe-4 rounded"><span class="justify-content-center ps-4 text-light">Trending:</span></div>
+        </div>
+        <div class="col-md-10 border border-info">
+            <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="h6 my-2"> Lorem ipsum dolor sit amet. libero modi non odit officiis, possimus vitae
+                            voluptate?
+                            Provident, velit?</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="h6 my-2"> Lorem ipsum dolor sit amet Aspernatur s odio quasi sunt unde voluptatum.
+                            Perspiciatis,
+                            quam.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="h6 my-2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. tempora
+                            voluptates! Culpa,
+                            ratione.</p>
+                    </div>
+                </div>
+                <!--                <button class="carousel-control-prev  bg-primary" type="button" data-bs-target="#carouselExampleCaptions"-->
+                <!--                        data-bs-slide="prev">-->
+                <!--                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                <!--                    <span class="visually-hidden">Previous</span>-->
+                <!--                </button>-->
+                <!--                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"-->
+                <!--                        data-bs-slide="next">-->
+                <!--                    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                <!--                    <span class="visually-hidden bg-primary">Next</span>-->
+                <!--                </button>-->
+                <div class="carousel-indicators position-absolute top-0 pt-0">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2" class="bg-primary"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3" class="bg-primary"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--END NEWS BAR-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>

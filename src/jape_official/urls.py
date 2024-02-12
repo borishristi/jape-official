@@ -20,7 +20,7 @@ from django.views.defaults import server_error
 from .views import index_view
 
 urlpatterns = [
-    path('', index_view, name='index_view'),
+    path('', include("blog.urls"), name='index_view'),
     path('blog/', include("blog.urls")),
     path('admin/', admin.site.urls),
     path('hello', server_error),
