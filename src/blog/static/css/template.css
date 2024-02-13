@@ -1,0 +1,22 @@
+body {
+
+}
+
+.text-menu-color {
+    color: white;
+}
+
+.trend-pox {
+    align-content: end;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+
+.m_card_info {
+    /*background-color: #447e9b;*/
+    /*width: 80%;*/
+    /*margin-top: 40%;*/
+    /*margin-left: 5%;*/
+    /*height: 50%;*/
+    /*color: #003366;*/
+    /*opacity: 25%;*/
+}
