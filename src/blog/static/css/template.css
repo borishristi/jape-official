@@ -20,3 +20,13 @@ body {
     /*color: #003366;*/
     /*opacity: 25%;*/
 }
+
+.img-hover {
+    transition: transform .5s;
+}
+
+.img-hover:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+}
