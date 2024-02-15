@@ -16,3 +16,7 @@ def article_view(request, numero_article):
 
 def template_view(request):
     return render(request, 'blog/template_site.html')
+
+
+def test_design_view(request):
+    return render(request, 'blog/test_design.html')
