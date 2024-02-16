@@ -16,7 +16,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container">
-        <a class="navbar-brand roboto-black-italic" href="#">JAPE OFFICIEL</a>
+        <a class="navbar-brand roboto-black-italic" href="#">JAPE-OFFICIEL</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,12 +55,12 @@
                     <a class="nav-link text-white title-link-nav" href="#">Contact us</a>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success btn-light" type="submit">Search</button>
-                <!--                <span><i class="fa-solid fa-magnifying-glass fa-2xl mt-2"></i></span>-->
-            </form>
         </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-light" type="submit">Search</button>
+            <!--                <span><i class="fa-solid fa-magnifying-glass fa-2xl mt-2"></i></span>-->
+        </form>
     </div>
 </nav>
 
@@ -381,7 +381,8 @@
                         </div>
                     </div>
                     <div class="col-12 d-grid gap-2 justify-content-center">
-                        <a class="btn btn-light btn-outline-primary" href="#">Load more post <i class="fa-solid fa-arrow-down" style="color: #0D6EFD"></i></a>
+                        <a class="btn btn-light btn-outline-primary" href="#">Load more post <i
+                                class="fa-solid fa-arrow-down" style="color: #0D6EFD"></i></a>
                     </div>
                 </div>
             </div>
@@ -418,7 +419,7 @@
                             </a>
                         </div>
                     </div>
-                    <h4 class="mt-4 pb-2 montserrat-title_card">Trending topics</h4>
+                    <h4 class="mt-4 pb-2 montserrat-title_card"><a href="#" class="title-link">Trending topics</a></h4>
                     <div class="img-hover col-12 mt-1 mb-2 rounded"
                          style="background-image: url('{% static 'img/img_topic_6.jpg' %}'); background-size: cover; height: 65px">
                             <span style="font-size: small"
@@ -532,6 +533,40 @@
 </div>
 
 <!--END ARTICLES SECTION-->
+
+<!--START FOOTER -->
+
+<footer class="container-fluid bg-dark border text-white">
+    <div class="container mb-5 mt-5">
+        <div class="row">
+            <div class="col-md-3 h3">
+                JAPE-OFFICIEL
+            </div>
+            <div class="col-md-5 lead">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aperiam consectetur cum cumque
+                    debitis, dicta est eveniet fuga fugit id maxime molestiae optio quas quos repellat, repellendus sit
+                    veritatis?</p>
+            </div>
+            <div class="col-md-4 h3">
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="Enter your email">
+                        <button type="submit" class="btn btn-light rounded-3 btn-outline-success mt-2">Submit</button>
+                        <div id="emailHelp" class="form-text lead">We'll never share your email with anyone else.</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12 d-grid justify-content-center">
+            <span>&copy;copyright | <a href="#" class="title-link-white h6">www.jape-officiel.cm</a></span>
+        </div>
+    </div>
+</footer>
+
+<!--END FOOTER-->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
